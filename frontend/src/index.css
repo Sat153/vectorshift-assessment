@@ -1,0 +1,60 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+/* ReactFlow handle hover glow */
+.react-flow__handle:hover {
+  transform: scale(1.4);
+  transition: transform 0.1s;
+}
+
+/* ReactFlow edge */
+.react-flow__edge-path {
+  stroke: #58a6ff;
+  stroke-width: 2;
+}
+
+/* ReactFlow selection box */
+.react-flow__selection {
+  background: rgba(31, 111, 235, 0.08);
+  border: 1px solid #1f6feb;
+}
+
+/* ReactFlow node selected outline */
+.react-flow__node.selected > div {
+  outline: 2px solid #58a6ff;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Controls buttons */
+.react-flow__controls-button {
+  background: #1c2333 !important;
+  border-bottom: 1px solid #30363d !important;
+  color: #e6edf3 !important;
+  fill: #e6edf3 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #21262d !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+
+/* Input/textarea focus ring inside nodes */
+input:focus, select:focus, textarea:focus {
+  border-color: #58a6ff !important;
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.15);
+}
